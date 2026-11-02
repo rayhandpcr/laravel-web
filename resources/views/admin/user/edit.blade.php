@@ -370,46 +370,21 @@
                                     <!-- First Name -->
                                     <div class="mb-3">
                                         <label for="first_name" class="form-label">First name</label>
-                                        <input type="text" id="first_name" class="form-control" name="first_name" value="{{ $dataPelanggan->first_name }}" required>
+                                        <input type="text" id="first_name" class="form-control" name="first_name" value="{{ $dataUser->first_name }}" required>
                                     </div>
 
-                                    <!-- Last Name -->
-                                    <div class="mb-3">
-                                        <label for="last_name" class="form-label">Last name</label>
-                                        <input type="text" id="last_name" class="form-control" name="last_name" value="{{ $dataPelanggan->last_name }}" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-sm-6">
-                                    <!-- Birthday -->
-                                    <div class="mb-3">
-                                        <label for="birthday" class="form-label">Birthday</label>
-                                        <input type="date" id="birthday" class="form-control" name="birthday" value="{{ $dataPelanggan->birthday }}"required>
-                                    </div>
-
-                                    <!-- Gender -->
-                                     <div class="mb-3">
-                                        <label for="gender" class="form-label">Gender</label>
-                                        <select id="gender" name="gender" class="form-select" name="gender" arial-label="Gender select example" required>
-                                            <option value="">-- Pilih --</option>
-                                            <option value="Male" {{ $dataPelanggan->gender == 'Male' ? 'selected' : '' }}>Male</option>
-                                            <option value="Female" {{ $dataPelanggan->gender == 'Female' ? 'selected' : '' }}>Female</option>
-                                            <option value="Other" {{ $dataPelanggan->gender == 'Other' ? 'selected' : '' }}>Other</option>
-                                        </select>
-                                    </div>
-                                </div>
 
                                 <div class="col-lg-4 col-sm-12">
                                     <!-- Email -->
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
-                                        <input type="email" id="email" class="form-control" name="email" value="{{ $dataPelanggan->email }}" required>
+                                        <input type="email" id="email" class="form-control" name="email" value="{{ $dataUser->email }}" required>
                                     </div>
 
                                     <!-- Phone -->
                                     <div class="mb-3">
-                                        <label for="phone" class="form-label">Phone</label>
-                                        <input type="text" id="phone" class="form-control" name="phone" value="{{ $dataPelanggan->phone }}" required>
+                                        <label for="phone" class="form-label">Password</label>
+                                        <input type="text" id="phone" class="form-control" name="phone" value="{{ $dataUser->password }}" required>
                                     </div>
 
                                     <!-- Buttons -->
